@@ -418,9 +418,6 @@ function TicTacToeController($scope, $timeout) {
   }
 
   function addClassName(indexx, indexx2, indexx3){
-    $('#index-'+indexx).text().effect("shake");
-    $('#index-'+indexx2).text().effect("shake");
-    $('#index-'+indexx3).text().effect("shake");
     $('#index-'+indexx).addClass("result-bg");
     $('#index-'+indexx2).addClass("result-bg");
     $('#index-'+indexx3).addClass("result-bg");

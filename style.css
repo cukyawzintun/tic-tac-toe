@@ -1,11 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
 @import url(https://fonts.googleapis.com/css?family=Finger+Paint);
-
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
 body, h1, h2, span {
   outline: none !important;
+}
+h5{
+  font-family: 'Pacifico';
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 15px;
 }
 body{
    font-family: "Architects Daughter";
@@ -107,12 +113,12 @@ body{
 .draw-message, .lose-message, .win-message {
     background: rgba(0,0,0,0.6);
     width: 900px;
-    height: 587px;
+    height: 610px;
     z-index: 2000;
     position: absolute;
     display: none;
-    top: -1px;
-    left: 50;
+    top: 0px;
+    left: 50px;
     box-sizing: border-box;
 }
 .draw-message p, .lose-message p, .win-message p {
@@ -122,7 +128,7 @@ body{
     font-size: 2.3rem;
     margin: 0;
     top: 230px;
-    left: 335px;
+    left: 350px;
     font-family: 'Architects Daughter', sans-serif;
 }
 .cell {
