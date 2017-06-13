@@ -15,15 +15,17 @@ function TicTacToeController($scope, $timeout) {
   vm.winCount = vm.lostCount = vm.drawCount = 0;
   var content=null;
   vm.player = false;
-  vm.turn = '';
+  vm.turn = 'Your Turn';
   vm.count = 0;
   var gameBoard = [];
 
   vm.selectPlayer = function(player) {
     if(player == 'one'){
+      vm.turn = 'Your Turn';
       vm.choosePlayer = false;
       vm.level = true;
     }else{
+      vm.turn = 'Player 1 Turn';
       gameBoard = ['E','E','E','E','E','E','E','E','E'];
       vm.player = true;
       vm.choosePlayer = false;

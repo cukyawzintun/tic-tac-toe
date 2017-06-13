@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>TTT</title>
+  <title>Tic Tac Toe</title>
   <link href='//fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
@@ -58,7 +58,7 @@
             <div id='index-8' class="cell" ng-click="vm.move(8)" data-indx="8" value="8"></div>
           </div>
           <div class="player-turn">
-            <p>Your turn</p>
+            <p>{{vm.turn}}</p>
             <!--{{vm.turn ? vm.turn : ''}}-->
           </div>
         </div>
